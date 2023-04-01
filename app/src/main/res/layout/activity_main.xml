@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        app:cardCornerRadius="8dp"
+        app:cardCornerRadius="20dp"
         android:background="@color/white">
         <LinearLayout
             android:layout_width="match_parent"
@@ -50,17 +50,22 @@
                 android:id="@+id/text_input_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:hint="Name"
                 style="@style/Widget.MaterialComponents.TextInputEditText.OutlinedBox"
                 >
-
-                <androidx.appcompat.widget.AppCompatEditText
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/text_input_edit_text"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Name"
-                    android:textSize="20dp"
-                    android:inputType="textCapWords"
-                    android:textColor="#363A43"
-                    android:textColorHint="#7A8089"/>
+                    android:layout_height="wrap_content"/>
+
+<!--                <androidx.appcompat.widget.AppCompatEditText-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:hint="Name"-->
+<!--                    android:textSize="20dp"-->
+<!--                    android:inputType="textCapWords"-->
+<!--                    android:textColor="#363A43"-->
+<!--                    android:textColorHint="#7A8089"/>-->
 
             </com.google.android.material.textfield.TextInputLayout>
 
