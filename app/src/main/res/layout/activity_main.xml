@@ -29,6 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
+            android:gravity="center"
             android:orientation="vertical">
             <TextView
                 android:layout_width="match_parent"
@@ -47,30 +48,25 @@
                 android:gravity="center"
                 android:textSize="20sp"/>
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/text_input_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Name"
                 style="@style/Widget.MaterialComponents.TextInputEditText.OutlinedBox"
                 >
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/text_input_edit_text"
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/name"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
-
-<!--                <androidx.appcompat.widget.AppCompatEditText-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:hint="Name"-->
-<!--                    android:textSize="20dp"-->
-<!--                    android:inputType="textCapWords"-->
-<!--                    android:textColor="#363A43"-->
-<!--                    android:textColorHint="#7A8089"/>-->
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    android:textSize="20dp"
+                    android:inputType="textCapWords"
+                    android:textColor="#363A43"
+                    android:textColorHint="#7A8089"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
-                android:layout_width="match_parent"
+                android:id="@+id/btnStart"
+                android:layout_width="280dp"
                 android:layout_height="wrap_content"
                 android:text="Start"
                 android:textSize="20sp"/>
